@@ -19,7 +19,7 @@ export class IPAddressContainer extends Component {
     console.log('component mounted')
     $.ajax({
       type: 'get',
-      url: 'http://icanhazip.com',
+      url: this.props.url,
       success: data=>{
         this.processRequest(data)
       },
